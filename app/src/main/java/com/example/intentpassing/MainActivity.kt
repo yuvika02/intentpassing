@@ -26,24 +26,24 @@ class MainActivity : AppCompatActivity() {
 btndial.setOnClickListener {
             var dialintent = Intent(Intent.ACTION_DIAL)
             intent.data = Uri.parse("tel:9988422624")
-            startActivity(intent) }
+            startActivity(dialintent) }
 btnemail.setOnClickListener {
-        var emailintent = Intent(Intent.ACTION_SENDTO)
+        var emailintent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse("email: trikhayuvika20@gmail.com")
-        startActivity(intent) }
+        startActivity(emailintent) }
 
 btnsms.setOnClickListener {
-        var smsintent = Intent(Intent.ACTION_SENDTO)
+        var smsintent = Intent(Intent.ACTION_SEND)
         intent.data = Uri.parse("sms: hello")
-        startActivity(intent) }
+        startActivity(smsintent) }
 btnshare.setOnClickListener {
         var shareintent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse("share: www.google.com")
-        startActivity(intent) }
+        startActivity(shareintent) }
 
 btnrate.setOnClickListener {
         var rateintent = Intent(Intent.ACTION_ALL_APPS)
         intent.data = Uri.parse("Rate: 5")
-        startActivity(intent)
+        startActivity(rateintent)
     } }
 }
