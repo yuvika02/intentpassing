@@ -28,7 +28,7 @@ btndial.setOnClickListener {
             intent.data = Uri.parse("tel:9988422624")
             startActivity(dialintent) }
 btnemail.setOnClickListener {
-        var emailintent = Intent(Intent.ACTION_VIEW)
+        var emailintent = Intent(Intent.ACTION_SENDTO)
         intent.data = Uri.parse("email: trikhayuvika20@gmail.com")
         startActivity(emailintent) }
 
